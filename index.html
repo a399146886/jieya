@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>气球点击 - 缓解压力游戏</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #f6f6f6;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .balloon {
+            position: absolute;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        #score {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 20px;
+        }
+
+        #timer {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+        }
+
+        #restart {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="score">分数: 0</div>
+    <div id="timer">时间: 30</div>
+    <button id="restart">重新开始</button>
+    <script src="script.js"></script>
+</body>
+</html>
